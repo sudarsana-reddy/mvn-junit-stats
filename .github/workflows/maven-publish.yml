@@ -47,6 +47,7 @@ jobs:
         path: target/**/junitreports/TEST-*.xml
         reporter: java-junit
         fail-on-error: true
+        token: ${{ secrets.GITHUB_TOKEN }}
           
     - name: Print test stats
       run: |
