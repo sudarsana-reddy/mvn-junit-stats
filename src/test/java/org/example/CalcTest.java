@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class CalcTest
 {
     /**
-     * Rigorous Test :-)
+     * Rigorous Test
      */
     @Test
     public void validateAdd()
