@@ -36,6 +36,10 @@ jobs:
           name: results
           path: target
 
+    - name: Sleep for 10 Mins
+      run: |
+        sleep 5m
+
     - name: Publish Test Results
       id: testreport
       uses: dorny/test-reporter@v1
