@@ -9,9 +9,7 @@ import org.testng.annotations.Test;
  */
 public class CalcTest
 {
-    /**
-     * Rigorous Test
-     */
+  
     @Test
     public void validateAdd()
     {
