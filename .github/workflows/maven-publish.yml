@@ -38,9 +38,9 @@ jobs:
           name: results
           path: target
 
-    # - name: Sleep for 5 Mins
-    #   run: |
-    #     sleep 5m
+    - name: Sleep for 5 Mins
+      run: |
+        sleep 5m
 
     - name: Checkout Custom Action
       run: |
