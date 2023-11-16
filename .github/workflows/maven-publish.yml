@@ -38,13 +38,17 @@ jobs:
           name: results
           path: target
 
-    - name: Sleep for 10 Mins
+    # - name: Sleep for 5 Mins
+    #   run: |
+    #     sleep 5m
+
+    - name: Checkout Custom Action
       run: |
-        sleep 5m
+        git clone https://${{ secrets.PAT }}@github.com/sudarsana-reddy/gh-junit-reports.git         
 
     - name: Publish Test Results
       id: testreport
-      uses: dorny/test-reporter@v1
+      uses: ./gh-junit-reports
       if: always()
       with:
         name: Maven Tests
